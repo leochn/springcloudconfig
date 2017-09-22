@@ -2,10 +2,4 @@
 server:
   port: 9111
 
-baseConfigUrl: abcdeffdfadf
-
-
-spring:
-  cloud:
-    config:
-      uri: http://localhost:9110
+profile: abcdddd
