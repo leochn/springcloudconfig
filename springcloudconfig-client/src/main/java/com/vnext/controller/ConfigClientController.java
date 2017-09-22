@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ConfigClientController {
 
-	@Value("${profile}")
-	private String profile;
+	@Value("${baseConfigUrl}")
+	private String baseConfigUrl;
 	
-	@GetMapping("/profile")
+	@GetMapping("/baseConfigUrl")
 	public String getProfile() {
-		return this.profile;
+		return this.baseConfigUrl;
 	}
 }

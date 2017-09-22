@@ -2,5 +2,10 @@
 server:
   port: 9111
 
-profile: abc
-      
+baseConfigUrl: abcdeffdfadf
+
+
+spring:
+  cloud:
+    config:
+      uri: http://localhost:9110
