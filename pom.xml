@@ -59,5 +59,7 @@
 	<modules>
 		<module>springcloudconfig-server</module>
 		<module>springcloudconfig-client</module>
+		<module>springcloudconfig-server-eureka</module>
+		<module>springcloudconfig-client-eureka</module>
 	</modules>
 </project>

@@ -1,0 +1,20 @@
+
+server:
+  port: 9112
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/leochn/springcloudconfig-repo.git
+
+  application:
+    name: springcloudconfig-server-eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9001/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}-${spring.cloud.client.ipAddress}:${server.port}

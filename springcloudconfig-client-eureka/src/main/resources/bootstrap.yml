@@ -1,0 +1,9 @@
+
+spring:
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: springcloudconfig-server-eureka:9001
+  application:
+    name: foobar
