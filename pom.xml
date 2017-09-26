@@ -61,5 +61,6 @@
 		<module>springcloudconfig-client</module>
 		<module>springcloudconfig-server-eureka</module>
 		<module>springcloudconfig-client-eureka</module>
+		<module>springcloudconfig-client-refresh</module>
 	</modules>
 </project>

@@ -6,7 +6,8 @@
 		<artifactId>springcloudconfig</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>springcloudconfig-client-eureka</artifactId>
+	<artifactId>springcloudconfig-client-refresh</artifactId>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
@@ -27,5 +28,4 @@
 		</dependency>
 
 	</dependencies>
-
 </project>
