@@ -8,6 +8,7 @@
 
 
 
+手动刷新git仓库的配置
 @RefreshScope
-执行: curl -x POST http://localhost:9114/refresh    报错了
+执行: curl -X POST "http://localhost:9114/refresh" 
 ["config.client.version","profile"]
