@@ -6,7 +6,7 @@ spring:
         enabled: true
         service-id: springcloudconfig-server-eureka
   application:
-    name: springcloudconfig-client-eureka
+    name: springcloudconfig-client-refresh
 
     
     
