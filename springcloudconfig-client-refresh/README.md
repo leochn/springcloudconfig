@@ -8,7 +8,41 @@
 
 
 
-手动刷新git仓库的配置
+## 手动刷新git仓库的配置
 @RefreshScope
-执行: curl -X POST "http://localhost:9114/refresh" 
+确保windows中能执行curl命令,然后执行: curl -X POST http://localhost:9114/refresh
+返回错误信息:
+```
+$ curl -X POST http://localhost:9114/refresh
+{
+	"timestamp":1506560089374,
+	"status":401,
+	"error":"Unauthorized",
+	"message":"Full authentication is required to access this resource.",
+	"path":"/refresh"
+}
+```
+则需要在配置文件bootstrap.yml中新增：
+```
+management.security.enabled=false  #忽略权限拦截,默认为true
+```
+
+
+再次执行 curl -X POST http://localhost:9114/refresh
+返回正确信息:
+```
+$ curl -X POST http://localhost:9114/refresh
 ["config.client.version","profile"]
+```
+
+
+
+
+
+
+
+
+
+
+
+

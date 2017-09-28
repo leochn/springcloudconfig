@@ -2,4 +2,4 @@
 server:
   port: 9114
 
-profile: at-Localhost
+profile: springcloudconfig-client-refresh->At-Localhost
